@@ -8,6 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: sfdx-actions/setup-pmd@v1
-      - name: run-pmd 
+      - name: run-pmd.bat 
         run: pmd.bat check -d ../force-app/main/default/classes/testingpmd.cls -R rulesets/apex/quickstart.xml -f text
