@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Check APEX
         uses: legetz/setup-pmd@v6.48
-      - run: pmd -d ../force-app/main/default/classes -R rulesets/apex/quickstart.xml -f text
+      - run: pmd -d ./force-app/main/default/classes -R rulesets/apex/quickstart.xml -f text
       - run: pwd
       - run: cd ..
       - run: pwd
