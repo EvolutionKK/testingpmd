@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: Check APEX
         uses: legetz/setup-pmd@v6.48
-      - run: pmd --dir '.github/workflows/test.cls' -R category/apex/design.xml -f text
+      - run: pmd --dir './testingpmd/github/workflows/test.cls' -R category/apex/design.xml -f text
