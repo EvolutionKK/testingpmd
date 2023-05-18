@@ -6,8 +6,8 @@ jobs:
     steps:
       - name: Check APEX
         uses: legetz/setup-pmd@v6.48
-      - run: echo --dir
-      - run: echo pwd
-      - run: echo ls
       - run: pwd
-      - run: echo --dir
+      - run: cd ..
+      - run: pwd
+      - run: ls -a
+      - run: ls -la
