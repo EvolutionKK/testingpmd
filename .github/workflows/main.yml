@@ -1,9 +1,19 @@
-name: validate-apex-code
 on: [push]
+
 jobs:
-  check-apex:
+  deploy_check_job:
     runs-on: ubuntu-latest
+    name: Analyse Source Code with PMD
+
     steps:
-      - name: Check APEX
-        uses: legetz/setup-pmd@v6.48
-      - run: pmd -language apex --dir ./test.cls --rulesets ./pmd-rules.xml -f text
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      # Generate report
+      - name: Generate PMD report
+        id: generate-pmd-report
+        uses: uses: docker://rawdee/pmd:latest
+        with:
+          args:
+            dir: '.'
+            rulesets: 'rulesets/apex/quickstart'
