@@ -1,5 +1,5 @@
 public class testingpmd {
-		//hello
+		//hi
     @AuraEnabled
     public static ServiceResource getServiceResource(String apptId){
         List<ServiceAppointment> st = [select ServiceTerritoryId from ServiceAppointment Where Id = :apptId];
