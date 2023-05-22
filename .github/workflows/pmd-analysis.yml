@@ -7,7 +7,7 @@ name: pmd
 
 on:
   push:
-    branches: [ apex, java ]
+    branches: [ apex, main ]
   #pull_request:
   #  branches: [ apex, java ]
   workflow_dispatch:
