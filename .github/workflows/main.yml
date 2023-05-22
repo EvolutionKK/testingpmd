@@ -15,5 +15,5 @@ jobs:
         uses: uses: docker://rawdee/pmd:latest
         with:
           args:
-            dir: '.'
+            dir: './force-app/main/default/classes'
             rulesets: 'rulesets/apex/quickstart'
