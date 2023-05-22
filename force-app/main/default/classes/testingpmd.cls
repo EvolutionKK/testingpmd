@@ -69,8 +69,8 @@ public class testingpmd {
     }
 	public static void addition(String abc)
     {
-        Integer a = 8;
-        Integer b = 3;
+        Integer a = 5;
+        Integer b = 9;
         Integer total = a+b;
         system.debug(total);
     }
